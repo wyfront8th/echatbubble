@@ -1,0 +1,45 @@
+.bubble {
+  width: 100%;
+  margin-top: 8px;
+}
+.bubble-content {
+  max-width: 260px;
+  display: inline-block;
+  border-radius: 8px;
+  padding: 12px 20px;
+  position: relative;
+  background-color: #eee;
+  outline: none;
+}
+
+.bubble:last-child .bubble-content:after,
+.bubble:nth-last-child(2) .bubble-content:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  bottom: 15px;
+  left: -7px;
+  width: 0;
+  height: 0;
+  border: 8px solid transparent;
+  border-right-color: #eee;
+  border-left: 0;
+}
+
+.bubble.input,
+.bubble.input .bubble-content {
+  transition: opacity 0.4s ease-in-out;
+  opacity: 1;
+  border: none;
+  outline: none;
+}
+.bubble.input.submitted {
+  transition: none;
+}
+.bubble.input.empty {
+  opacity: 0;
+}
+.bubble.input > div {
+  background-color: #eee;
+  font-size: 16px;
+}

@@ -1,0 +1,54 @@
+{
+  "name": "chat-bubble",
+  "productName": "chat-bubble",
+  "version": "0.1.0",
+  "description": "录屏的时候，用于显示一些聊天气泡提示",
+  "main": ".webpack/main",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "eslint --ext .ts,.tsx ."
+  },
+  "keywords": [],
+  "author": {
+    "name": "wangyifeng",
+    "email": "fengcwww@163.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.4",
+    "@electron-forge/maker-deb": "^6.0.4",
+    "@electron-forge/maker-rpm": "^6.0.4",
+    "@electron-forge/maker-squirrel": "^6.0.4",
+    "@electron-forge/maker-zip": "^6.0.4",
+    "@electron-forge/plugin-webpack": "^6.0.4",
+    "@types/node": "^18.11.17",
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.10",
+    "@typescript-eslint/eslint-plugin": "^5.47.1",
+    "@typescript-eslint/parser": "^5.47.1",
+    "@vercel/webpack-asset-relocator-loader": "^1.7.3",
+    "autoprefixer": "^10.4.13",
+    "css-loader": "^6.7.3",
+    "electron": "22.0.0",
+    "eslint": "^8.30.0",
+    "eslint-plugin-import": "^2.26.0",
+    "fork-ts-checker-webpack-plugin": "^7.2.14",
+    "node-loader": "^2.0.0",
+    "postcss": "^8.4.20",
+    "postcss-loader": "^7.0.2",
+    "style-loader": "^3.3.1",
+    "tailwindcss": "^3.2.4",
+    "ts-loader": "^9.4.2",
+    "ts-node": "^10.9.1",
+    "typescript": "~4.5.4"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0",
+    "framer-motion": "^8.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
